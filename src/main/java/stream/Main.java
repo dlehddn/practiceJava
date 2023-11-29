@@ -33,21 +33,6 @@ public class Main {
         System.out.println(reduce.orElse(0));
 
 
-        // practice
-        List<Person> people = Arrays.asList(
-                new Person("Alice", 25),
-                new Person("Bob", 30),
-                new Person("Charlie", 25),
-                new Person("David", 30),
-                new Person("Eva", 25)
-        );
-
-        people.stream()
-                .collect(Collectors.groupingBy(p -> p.getName().charAt(0), Collectors.counting()))
-                .forEach((k, v) -> {
-                    System.out.println("key = " + k + ", value = " + v);
-                });
-
         // 최댓값 찾기
         Optional<Integer> reduce1 = Arrays.stream(arr)
                 .reduce((x, y) -> x > y ? x : y);
