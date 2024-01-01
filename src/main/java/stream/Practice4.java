@@ -17,5 +17,7 @@ public class Practice4 {
 
         collect.forEach(s -> System.out.println(s));
 
+
+
     }
 }

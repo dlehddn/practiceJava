@@ -5,13 +5,21 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main {
 
     public static void main(String[] args) {
         Integer[] arr = new Integer[]{0, 100, 20, 1, 4, 2, 8, 59};
         List<Integer> list = Arrays.asList(arr);
+
+
         String[] arrStr = {"a", "abc", "abcd", "abcdef"};
+
+        int[] intArr = new int[]{1, 2, 3, 4};
+        IntStream intStream = Arrays.stream(intArr);
+
+
 
         list.stream()
                 .sorted()

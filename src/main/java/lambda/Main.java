@@ -15,7 +15,6 @@ public class Main {
         //참조 변수로
         Runnable runnable2 = () -> System.out.println("Run2!");
         runnable2.run();
-
     }
 
     static void execute(Runnable runnable) {
